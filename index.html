@@ -588,24 +588,31 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
                 <body>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
                     <form action="mailto:sadanandguptat@gmail.com" method="post" enctype="text/plain">
-                        <label for="name">Your Name:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="email">Your Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message"></textarea><br><br>
-                        <input type="submit" value="Send">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
                     </form>
-                </body>
-                
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
+       
     <!-- Contact End -->
 
 
