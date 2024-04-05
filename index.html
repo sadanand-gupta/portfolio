@@ -590,29 +590,66 @@
                 <body>
 
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form action="mailto:sadanandguptat@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label for="name">Your Name:</label>
-                            <input type="text" class="form-control" id="name" name="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email:</label>
-                            <input type="email" class="form-control" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" name="message"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-       
+    <form action="mailto:sadanandguptat@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+<style>
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+    form {
+        max-width: 400px;
+    }
+}
+</style>
     <!-- Contact End -->
 
 
