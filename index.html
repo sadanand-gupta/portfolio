@@ -118,29 +118,70 @@
 
 
     
-   <!-- Skills Section -->
-   <div class="container py-5" id="skills">
+  <section>
+<div class="container-fluid pt-5 pb-3" id="awards">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Awards & Recognition</h1>
+        </div>
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="zoom-in">
+                <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                    <img class="img-fluid rounded w-100" src="img/Award2.webp" alt="Award 1">
+                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                        <a href="img/Award01.webp" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                    <img class="img-fluid rounded w-100" src="img/award5.webp" alt="Award 2">
+                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                        <a href="img/Award02.webp" data-lightbox="portfolio">
+                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Skills Section -->
+<div class="container py-5" id="skills">
     <h2 class="text-center mb-4" data-aos="fade-up">My Skills</h2>
     <div class="row">
         <div class="col-md-6" data-aos="fade-right">
-            <div class="progress mb-3">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%">Flutter & Dart - 90%</div>
+            <div class="progress mb-3 shadow-lg rounded">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%; animation: fillBar 2s ease-in-out;">Flutter & Dart - 90%</div>
             </div>
-            <div class="progress mb-3">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 85%">HTML & CSS - 85%</div>
+            <div class="progress mb-3 shadow-lg rounded">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 85%; animation: fillBar 2s ease-in-out;">HTML & CSS - 85%</div>
             </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
-            <div class="progress mb-3">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%">JavaScript & PHP - 80%</div>
+            <div class="progress mb-3 shadow-lg rounded">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%; animation: fillBar 2s ease-in-out;">JavaScript & PHP - 80%</div>
             </div>
-            <div class="progress mb-3">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%">WordPress - 75%</div>
+            <div class="progress mb-3 shadow-lg rounded">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%; animation: fillBar 2s ease-in-out;">WordPress - 75%</div>
             </div>
         </div>
     </div>
 </div>
 <!-- Skills End -->
+
+<style>
+@keyframes fillBar {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+</style>
+
 
 
 
