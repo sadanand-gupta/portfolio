@@ -55,6 +55,21 @@
             transform: scale(1.05);
             transition: all 0.3s ease;
         }
+
+.service-icon {
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
     </style>
 </head>
 
@@ -235,53 +250,47 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Works</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+<div class="container-fluid pt-5" id="service">
+    <div class="container">
+        <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+            <h1 class="position-absolute text-uppercase text-primary">My Works</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-left">
+                <div class="card shadow-lg rounded p-4">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Web Design</h4>
                     </div>
-                    <p>I have a strong web design background, and I've created many WordPress websites, 
-                        excelling in <br> design, UX, SEO, and client communication with better understanding of Design.
-                    </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="readmore.html">Read More</a>
+                    <p>I have a strong web design background, excelling in design, UX, SEO, and client communication.</p>
+                    <a class="btn btn-primary text-white" href="readmore.html">Read More</a>
                 </div>
-                <!-- <div class="service-box col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Development</h4>
-                    </div>
-                    <p>Web development involves designing, building, and maintaining websites, encompassing web design, content publishing, and the creation of internet-based applications.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div> -->
-                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-right" data-aos-delay="200">
+                <div class="card shadow-lg rounded p-4">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Apps Development</h4>
                     </div>
-                    <p>App development is the process of designing, creating, and maintaining web and mobile applications. It includes UI/UX design, navigation, 
-                        interactivity, and backend development to ensure seamless functionality and user experience.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    <p>App development includes UI/UX design, navigation, interactivity, and backend integration.</p>
+                    <a class="btn btn-primary text-white" href="">Read More</a>
                 </div>
-                <div class="service-box col-lg-3 col-md-6 text-center mb-5">
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-left" data-aos-delay="400">
+                <div class="card shadow-lg rounded p-4">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">SEO</h4>
                     </div>
-                    <p>SEO is the enhancement of website traffic quality <br>and volume from search engines,
-                         focusing on organic traffic rather than direct or paid traffic. </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    <p>SEO enhances website traffic quality and volume, focusing on organic search visibility.</p>
+                    <a class="btn btn-primary text-white" href="">Read More</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
 
     <!-- Awards & Recognition Section Start -->
      <section>
