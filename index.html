@@ -45,16 +45,25 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        
         .progress-bar {
-            animation: fillBar 2s ease-in-out forwards;
+            transition: width 1s ease-in-out;
+            border-radius: 5px;
         }
-        @keyframes fillBar {
-            from { width: 0%; }
-            to { width: 100%; }
+        
+        .headings {
+            position: relative;
+            z-index: 1;
         }
-        .btn-hover:hover {
-            transform: scale(1.05);
-            transition: all 0.3s ease;
+        
+        .text-primary {
+            color: #0d6efd !important;
+            z-index: 2;
         }
 
 .service-icon {
@@ -76,7 +85,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light py-3 px-lg-5">
-        <a href="#home" class="navbar-brand font-weight-bold">Portfolio</a>
+        <a href="#home" class="navbar-brand font-weight-bold"> Portfolio</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -131,240 +140,74 @@
     <!-- About End -->
 <!-- Skills Section -->
 <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Flutter and Dart</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C language</h6>
-                            <h6 class="font-weight-bold">76%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML And CSS</h6>
-                            <h6 class="font-weight-bold">89%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JavaScript And PHP</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">WordPress</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Photoshop</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill End -->
-
-<style>
-@keyframes fillBar {
-    from { width: 0%; }
-    to { width: 100%; }
-}
-</style>
-<!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor of Computer Science</h5>
-                            <p class="mb-2"><strong>Dhanalakshmi College Of Engineering</strong></p>
-                            <p>Computer Science and Engineering 
-                            <p>CGPA – 8.4 | 2020 - 2024</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-6">
-                        <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 0px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Tectalik - From Human to AI</h5>
-                            <p>I am currently working as an Align Associate at Tectalik, where I specialize as a Flutter App Developer. My expertise lies in developing cross-platform mobile applications using Flutter and Dart, enabling efficient and high-performance app development. Throughout my journey, I have utilized various tools and programming languages, always staying updated with the latest technologies and frameworks. My technical skills allow me to create user-friendly, scalable, and efficient applications while adhering to clean code practices. I am passionate about problem-solving and always strive to deliver innovative solutions in every project I work on.</p>
-                    </div>
-            </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative ex-me mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">ENDEAVOURS TECHNOLOGY SERVICES</h5>
-                            <p class="mb-2"><strong>karwingz.com | <a href="https://karwingz.com/">Visit karwingz.com</a>
-                            </strong> | <larger>Tours and travels in India</larger></p>
-                            <p>I had the opportunity to collaborate as part of a dedicated team to develop the 'karwingz' website, a platform designed to showcase the beauty and diversity of India to international travelers. Leveraging the power of WordPress, we crafted a dynamic and user-friendly website that not only captures the essence of India's rich culture, landscapes, and experiences but also makes it easily accessible to travelers from around the world. It was a fulfilling project that allowed us to combine our technical skills with our passion for promoting India as an incredible travel destination @ENDEAVOURS TECHNOLOGY SERVICES.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-    <!-- Services Start -->
-<div class="container-fluid pt-5" id="service">
     <div class="container">
-        <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-            <h1 class="position-absolute text-uppercase text-primary">My Works</h1>
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+            <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
         </div>
-        <div class="row pb-3">
-            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-left">
-                <div class="card shadow-lg rounded p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Design</h4>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">Flutter and Dart</h6>
+                        <h6 class="font-weight-bold">90%</h6>
                     </div>
-                    <p>I have a strong web design background, excelling in design, UX, SEO, and client communication.</p>
-                    <a class="btn btn-primary text-white" href="readmore.html">Read More</a>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">C language</h6>
+                        <h6 class="font-weight-bold">76%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">HTML And CSS</h6>
+                        <h6 class="font-weight-bold">89%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-right" data-aos-delay="200">
-                <div class="card shadow-lg rounded p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">JavaScript And PHP</h6>
+                        <h6 class="font-weight-bold">80%</h6>
                     </div>
-                    <p>App development includes UI/UX design, navigation, interactivity, and backend integration.</p>
-                    <a class="btn btn-primary text-white" href="">Read More</a>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 text-center mb-5" data-aos="flip-left" data-aos-delay="400">
-                <div class="card shadow-lg rounded p-4">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SEO</h4>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">WordPress</h6>
+                        <h6 class="font-weight-bold">95%</h6>
                     </div>
-                    <p>SEO enhances website traffic quality and volume, focusing on organic search visibility.</p>
-                    <a class="btn btn-primary text-white" href="">Read More</a>
+                    <div class="progress">
+                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">Photoshop</h6>
+                        <h6 class="font-weight-bold">75%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Services End -->
 
-    <!-- Awards & Recognition Section Start -->
-<section>
-  <div class="container-fluid pt-5 pb-3" id="awards">
-    <div class="container">
-      <div class="position-relative d-flex align-items-center justify-content-center">
-        <h1 class="display-2 text-uppercase text-white headings" style="font-family: 'Arial', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
-          Awards
-        </h1>
-        <h1 class="position-absolute text-uppercase text-primary" style="font-family: 'Arial', sans-serif; font-weight: bold; color: #ff5c8d;">
-          Awards & Recognition
-        </h1>
-      </div>
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/Award2.webp" alt="Award 1">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/award5.webp" alt="Award 2">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/Award3.webp" alt="Award 3">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up" data-aos-delay="600">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/Award4.webp" alt="Award 4">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up" data-aos-delay="800">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/Award1.webp" alt="Award 5">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-aos="fade-up" data-aos-delay="1000">
-          <div class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-            <img class="img-fluid rounded w-100" src="img/Award2.webp" alt="Award 6">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Awards & Recognition Section End -->
- <section>
-        <div class="container-fluid py-5" id="contact">
-            <div class="container">
-                <div class="position-relative d-flex align-items-center justify-content-center">
-                    <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1></div>
-                    <div class="centered-form">
-                    <form action="mailto:sadanandguptat@gmail.com" method="post" enctype="text/plain">
-                            <label for="name">Your Name:</label><br>
-                            <input type="text" id="name" name="name"><br>
-                            <label for="email">Your Email:</label><br>
-                            <input type="email" id="email" name="email"><br>
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message"></textarea><br><br>
-                            <input type="submit" value="Send">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -396,6 +239,25 @@
 
     <!-- JavaScript Libraries -->
     <!-- JavaScript Libraries -->
+
+    <script>
+        // Function to animate progress bars
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            
+            // Set a small delay before starting animation
+            setTimeout(() => {
+                progressBars.forEach(bar => {
+                    const value = bar.getAttribute('aria-valuenow');
+                    bar.style.width = value + '%';
+                });
+            }, 300);
+        }
+
+        // Run animation when page loads
+        document.addEventListener('DOMContentLoaded', animateProgressBars);
+    </script>
+     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
