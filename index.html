@@ -603,23 +603,39 @@
                     <textarea class="form-control" placeholder="Message" rows="5" required style="border-color: #3178c6;"></textarea>
                 </div>
                 <div class="d-flex justify-content-between mt-3">
-                    <button type="submit" class="btn btn-primary" style="background-color: #0d6efd; border-color: #0d6efd;">Send Message</button>
+                    <button type="submit" class="btn btn-primary fixed-btn">
+                      Send Message
+                    </button>
+                  
                     <a id="downloadBtn"
-   href="https://drive.google.com/uc?export=download&id=1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN" 
-   class="btn btn-menu" 
-   style="background-color: black; border-color: transparent; color: coral;" 
-   download 
-   title="Click to download"
-   onclick="showProcessingText()">
-   <i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me
-</a>
-
-<script>
-  function showProcessingText() {
-    const btn = document.getElementById('downloadBtn');
-    btn.innerHTML = '<span style="margin-right: 4px;"><i class="bi bi-hourglass-split"></i></span> Downloading...';
-  }
-</script>
+                       href="https://drive.google.com/uc?export=download&id=1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN" 
+                       class="btn fixed-btn"
+                       style="background-color: black; border-color: transparent; color: coral;" 
+                       download 
+                       title="Click to download"
+                       onclick="showProcessingText()">
+                       <i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me
+                    </a>
+                  </div>
+                  
+                  <style>
+                    .fixed-btn {
+                      height: 45px; /* Adjust as needed */
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      min-width: 130px; /* Optional: prevent shrinking */
+                      white-space: nowrap;
+                    }
+                  </style>
+                  
+                  <script>
+                    function showProcessingText() {
+                      const btn = document.getElementById('downloadBtn');
+                      btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right: 6px;"></i> Downloading...';
+                    }
+                  </script>
+                  
 
 
 
