@@ -18,6 +18,8 @@
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -600,9 +602,32 @@
                 <div class="form-group mb-3">
                     <textarea class="form-control" placeholder="Message" rows="5" required style="border-color: #3178c6;"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="background-color: #0d6efd; border-color: #0d6efd;">Send Message</button>
+                <div class="d-flex justify-content-between mt-3">
+                    <button type="submit" class="btn btn-primary" style="background-color: #0d6efd; border-color: #0d6efd;">Send Message</button>
+                    <a id="downloadBtn"
+   href="https://drive.google.com/uc?export=download&id=1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN" 
+   class="btn btn-menu" 
+   style="background-color: black; border-color: transparent; color: coral;" 
+   download 
+   title="Click to download"
+   onclick="showProcessingText()">
+   <i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me
+</a>
+
+<script>
+  function showProcessingText() {
+    const btn = document.getElementById('downloadBtn');
+    btn.innerHTML = '<span style="margin-right: 4px;"><i class="bi bi-hourglass-split"></i></span> Downloading...';
+  }
+</script>
+
+
+
+
+                </div>
             </form>
         </div>
+        
     </div>
 </div>
 <!-- Contact End -->
