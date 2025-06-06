@@ -664,11 +664,18 @@
                   </style>
                   
                   <script>
-                    function showProcessingText() {
-                      const btn = document.getElementById('downloadBtn');
-                      btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right: 6px;"></i> Downloading...';
-                    }
-                  </script>
+    function showProcessingText() {
+        const btn = document.getElementById('downloadBtn');
+        
+        // 1. Change the button to show the "Downloading..." message
+        btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right: 6px;"></i> Downloading...';
+        
+        // 2. Set a timer to change it back after 4 seconds (4000ms)
+        setTimeout(function() {
+            btn.innerHTML = '<i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me';
+        }, 4000); 
+    }
+</script>
                   
 
 
