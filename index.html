@@ -108,7 +108,37 @@
     z-index: 2;
     padding: 100px 20px;
 }
+.tool-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 30px;
+}
 
+.slider-track {
+    display: inline-block;
+    animation: scrollLeft 40s linear infinite;
+}
+
+.slider-track img {
+    height: 40px;
+    margin: 0 20px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.slider-track img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
     </style>
 </head>
 
@@ -127,20 +157,100 @@
                 <a href="#awards" class="nav-item nav-link">Awards</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-<a href="https://drive.google.com/file/d/1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN/view?usp=sharing" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a>        </div>
+            <a href="https://drive.google.com/file/d/1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN/view?usp=sharing" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a>        </div>
     </nav>
     <!-- Navbar End -->
   <!-- Hero Section Start -->
-  <div class="hero" id="home">
+ <div class="hero" id="home">
+    <!-- Video Background -->
     <video autoplay muted loop playsinline class="bg-video">
         <source src="img/default.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <!-- Hero Content -->
     <div class="hero-content">
         <h1 data-aos="fade-up">Hello, I'm <span class="text-warning">Sadanand Gupta</span></h1>
         <p class="lead" data-aos="fade-up" data-aos-delay="300">App Developer & Web Developer</p>
+
+        <!-- Icon Slider -->
+        <div class="tool-slider mt-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="slider-track">
+                <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" />
+                <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" /><img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" />
+                <img src="img/vuejs.png" alt="vuejs" />
+                <img src="img/dbeaver.png" alt="dbeaver" />
+                <img src="img/chatgpts.png" alt="chatgpts" />
+                <img src="img/Perplexity-Logo.jpg" alt="chatgpts" />
+                <img src="img/images.jpeg" alt="chatgpts" />
+                <img src="img/Python-Logo.jpg" alt="chatgpts" />
+                <img src="img/c-tutorial-for-beginners.png" alt="chatgpts" />
+                <img src="img/android studio.png" alt="android studio" />
+                <img src="img/visual studio code.jpeg" alt="visual studio code" />
+                <img src="img/android.jpg" alt="android" />
+                <img src="img/ioss.jpg" alt="ioss" />
+                <img src="img/flutter.png" alt="flutter" />
+                <img src="img/vuetify.png" alt="vuetify" />
+
+                
+                <!-- dupliccates gain -->
+                 <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" />
+                <img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" /><img src="img/html.jpg" alt="html" />
+                <img src="img/css.jpg" alt="css" />
+                <img src="img/bootstrap.png" alt="bootstrap" />
+                <img src="img/javascript.png" alt="javascript" />
+                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/photoshop.jpg" alt="phtotoshop" />
+                <img src="img/vuejs.png" alt="vuejs" />
+                <img src="img/dbeaver.png" alt="dbeaver" />
+                <img src="img/chatgpts.png" alt="chatgpts" />
+                <img src="img/Perplexity-Logo.jpg" alt="chatgpts" />
+                <img src="img/images.jpeg" alt="chatgpts" />
+                <img src="img/Python-Logo.jpg" alt="chatgpts" />
+                <img src="img/c-tutorial-for-beginners.png" alt="chatgpts" />
+                <img src="img/android studio.png" alt="android studio" />
+                <img src="img/visual studio code.jpeg" alt="visual studio code" />
+                <img src="img/android.jpg" alt="android" />
+                <img src="img/ioss.jpg" alt="ioss" />
+                <img src="img/flutter.png" alt="flutter" />
+                <img src="img/vuetify.png" alt="vuetify" />
+
+            </div>
+        </div>
     </div>
 </div>
+
 
 <!-- Hero Section End -->
 
