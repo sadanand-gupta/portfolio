@@ -287,3 +287,6 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+.white-text {
+    color: white !important;
+}
