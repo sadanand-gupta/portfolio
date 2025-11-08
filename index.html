@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,6 +157,30 @@
         margin: 0 10px;
     }
 }
+.project-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+    height: 100%;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+.project-card .card-text {
+    flex-grow: 1;
+}
+.badge-skill {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 500;
+    padding: .35em .65em;
+    margin: 2px;
+}
 
     </style>
 </head>
@@ -173,7 +196,8 @@
             <div class="navbar-nav ml-auto">
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skills" class="nav-item nav-link">Skills</a>
-                <a href="#Expericence" class="nav-item nav-link">Expericence</a>
+                <a href="#Expericence" class="nav-item nav-link">Experience</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
                 <a href="#awards" class="nav-item nav-link">Awards</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
@@ -193,7 +217,7 @@
 <h1 data-aos="fade-up" class="hellobhai">
   <span class="white-text">Hello, I'm</span> <span class="text-warning">Sadanand Gupta</span>
 </h1>
-<p class="lead white-text" data-aos="fade-up" data-aos-delay="300">Application and Web Developer</p>
+<p class="lead white-text" data-aos="fade-up" data-aos-delay="300">Flutter Developer | Android | iOS</p>
 
 <!-- DELETE THIS ENTIRE BLOCK -->
 <div class="tool-slider mt-2" data-aos="fade-up" data-aos-delay="500">
@@ -213,8 +237,8 @@
         <div class="tool-item"><img src="img/skills (1).png" alt="REST API"></div>
         <div class="tool-item"><img src="img/skills (5).png" alt="DBeaver"></div>
         <div class="tool-item"><img src="img/skills (10).png" alt="ChatGPT"></div>
-        <div class="tool-item"><img src="img/skills(21).png" alt="ChatGPT"></div>
-        <div class="tool-item"><img src="img/skills(22).png" alt="ChatGPT"></div>
+        <div class="tool-item"><img src="img/skills(21).png" alt="Git"></div>
+        <div class="tool-item"><img src="img/skills(22).png" alt="Dio"></div>
 
         <!-- Duplicate Set for Seamless Loop -->
         <div class="tool-item"><img src="img/skills (16).png" alt="Flutter"></div>
@@ -255,9 +279,9 @@
                     <img class="img-fluid rounded w-100" src="img/IMG_66112.webp" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Web &  Mobile Developer</h3>
+                    <h3 class="mb-4">Professional Summary</h3>
                     <p style="font-size: 16px; line-height: 1.6; text-align: justify; margin-bottom: 20px; color: #333; font-family: Arial, sans-serif; max-width: 100%;">
-                        I am a passionate web and app developer with a flair for crafting visually stunning, user-centered websites and mobile applications. With a solid foundation in design principles and coding languages, I excel at merging aesthetics with functionality to deliver memorable digital experiences. Specializing in both web design and Flutter app development using Dart, I build responsive, smooth, and high-performance solutions. Whether it's a website with seamless navigation or a professional app with optimized performance, I'm dedicated to bringing your vision to life and driving impactful results for your business.
+                        Results-driven Flutter Developer with 2+ years of experience in designing, developing, and deploying cross-platform mobile apps for Android and iOS. Skilled in Flutter, Dart, REST API integration, and UI/UX optimization. Experienced in leading end-to-end app development lifecycles, publishing apps on Play Store and App Store, and collaborating in agile teams to deliver scalable enterprise solutions.
                     </p>
                     <div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; width: 100%;">
                         <div style="width: 50%; padding: 8px 0;">
@@ -277,13 +301,13 @@
                         
                         <div style="width: 50%; padding: 8px 0;">
                             <h6 style="margin: 0; font-size: 16px; font-weight: 600;">Experience: 
-                                <span style="color: #6c757d; font-weight: normal;">1+ years</span>
+                                <span style="color: #6c757d; font-weight: normal;">2+ years</span>
                             </h6>
                         </div>
                         
                         <div style="width: 50%; padding: 8px 0;">
                             <h6 style="margin: 0; font-size: 16px; font-weight: 600;">Address: 
-                                <span style="color: #6c757d; font-weight: normal;">112 Q-Block, MMDA Colony, Arumbakkam, Chennai-106.</span>
+                                <span style="color: #6c757d; font-weight: normal;">Chennai, India</span>
                             </h6>
                         </div>
                         
@@ -395,6 +419,32 @@
 <!-- Skills Section -->
 <div class="container-fluid py-20" id="skills">
     <div class="container">
+        
+
+        <!-- NEW Detailed Skills Section -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h4 class="mb-3">Mobile & App Development</h4>
+                <p><span class="badge-skill">Flutter</span> <span class="badge-skill">Dart</span> <span class="badge-skill">Android</span> <span class="badge-skill">iOS</span></p>
+                
+                <h4 class="mt-4 mb-3">State Management</h4>
+                <p><span class="badge-skill">BLoC</span> <span class="badge-skill">Provider</span></p>
+
+                <h4 class="mt-4 mb-3">Backend & APIs</h4>
+                <p><span class="badge-skill">REST APIs</span> <span class="badge-skill">Dio</span> <span class="badge-skill">APIs</span></p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Tools & Deployment</h4>
+                <p><span class="badge-skill">Git</span> <span class="badge-skill">Play Store</span> <span class="badge-skill">App Store</span></p>
+                
+                <h4 class="mt-4 mb-3">Core Strengths</h4>
+                <p><span class="badge-skill">Problem Solving</span> <span class="badge-skill">Time Management</span> <span class="badge-skill">Team Collaboration</span> <span class="badge-skill">Adaptability</span></p>
+
+                <h4 class="mt-4 mb-3">Languages</h4>
+                <p><span class="badge-skill">English (Professional)</span> <span class="badge-skill">Hindi (Native)</span> <span class="badge-skill">Tamil (Fluent)</span></p>
+            </div>
+        </div>
+
         <div class="position-relative d-flex align-items-center justify-content-center">
             <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
             <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
@@ -412,16 +462,16 @@
                 </div>
                 <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">C language</h6>
-                        <h6 class="font-weight-bold">76%</h6>
+                        <h6 class="font-weight-bold">Vue.js & Vuetify</h6>
+                        <h6 class="font-weight-bold">70%</h6>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                     </div>
                 </div>
                 <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">HTML And CSS</h6>
+                        <h6 class="font-weight-bold">HTML, CSS, Bootstrap</h6>
                         <h6 class="font-weight-bold">89%</h6>
                     </div>
                     <div class="progress">
@@ -432,7 +482,7 @@
             <div class="col-md-6">
                 <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">JavaScript And PHP</h6>
+                        <h6 class="font-weight-bold">JavaScript</h6>
                         <h6 class="font-weight-bold">80%</h6>
                     </div>
                     <div class="progress">
@@ -450,416 +500,466 @@
                 </div>
                 <div class="skill mb-4">
                     <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">Photoshop</h6>
+                        <h6 class="font-weight-bold">SQL & Databases</h6>
                         <h6 class="font-weight-bold">75%</h6>
                     </div>
                     <div class="progress">
                         <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                     </div>
                 </div>
-                <div class="skill mb-4">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-bold">Vue.js</h6>
-                        <h6 class="font-weight-bold">65%</h6>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Qualification Start -->
+<div class="container-fluid py-20" id="Expericence">
+    <div class="container">
+        <div
+            class="position-relative d-flex align-items-center justify-content-center">
+            <h1
+                class="display-2 text-uppercase text-white headings"
+                style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+            <h1
+                class="position-absolute text-uppercase text-primary">Education
+                & Experience</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="mb-4">My Education</h3>
+                <div
+                    class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div
+                        class="position-relative ex-me mb-4">
+                        <i
+                            class="far fa-dot-circle text-primary position-absolute"
+                            style="top: 2px; left: -35px; font-size: 22px;"></i>
+                        <h5
+                            class="font-weight-bold mb-1">Bachelor
+                            of Engineering</h5>
+                        <p class="mb-2"><strong>Dhanalakshmi
+                                College Of
+                                Engineering</strong></p>
+                        <p>Computer Science and Engineering
+                            <p>CGPA – 8.4 / 10 | 2020 - 2024</p>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Experience</h3>
+                    <div
+                        class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div
+                            class="position-relative ex-me mb-4">
+                            <i
+                                class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 0px;left: -35px;  font-size: 22px;"></i>
+                            <h5
+                                class="font-weight-bold mb-1">Flutter Developer</h5>
+                            <p class="mb-2"><strong>Tectalik</strong> | Feb 2024 - Present</p>
+                            <ul style="padding-left: 1.2rem;">
+                                <li>Built high-performance Flutter apps for Android and iOS using Flutter and Dart.</li>
+                                <li>Integrated REST APIs via Dio, optimized app load time by 30%, and improved UX.</li>
+                                <li>Handled app deployment lifecycle on Play Store & App Store.</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="position-relative ex-me mb-4">
+                            <i
+                                class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5
+                                class="font-weight-bold mb-1">Intern</h5>
+                            <p class="mb-2"><strong>ENDEAVOURS TECHNOLOGY SERVICES</strong> | Dec 2023 - Feb 2024</p>
+                            <ul style="padding-left: 1.2rem;">
+                                <li>Developed and maintained Karwingz.com, a WordPress-based travel platform.</li>
+                                <li>Improved SEO & responsiveness, increasing site traffic by 20%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+<!-- Services Start -->
+<div class="container-fluid pt-20" id="service">
+    <div class="container">
+        <div
+            class="service-h4 position-relative d-flex align-items-center justify-content-center">
+            <h1
+                class="display-2 text-uppercase text-white headings"
+                style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+            <h1
+                class="position-absolute text-uppercase text-primary">My
+                Services</h1>
+        </div>
+        <div class="row pb-3 justify-content-center">
+            <div
+                class="service-box col-lg-4 col-md-6 text-center mb-5">
+                <div
+                    class="d-flex align-items-center justify-content-center mb-4">
+                    <i
+                        class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Web
+                        Development</h4>
+                </div>
+                <p>I build visually stunning, user-centered websites with a solid foundation in design principles and modern coding languages, merging aesthetics with functionality.
+                </p>
+            </div>
+            <div
+                class="service-box col-lg-4 col-md-6 text-center mb-5">
+                <div
+                    class="d-flex align-items-center justify-content-center mb-4">
+                    <i
+                        class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                    <h4
+                        class="font-weight-bold m-0">Apps
+                        Development</h4>
+                </div>
+                <p>Specializing in Flutter and Dart, I create responsive, smooth, and high-performance cross-platform mobile applications for both Android and iOS.
+                </p>
+            </div>
+            <div
+                class="service-box col-lg-4 col-md-6 text-center mb-5">
+                <div
+                    class="d-flex align-items-center justify-content-center mb-4">
+                    <i
+                        class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                    <h4
+                        class="font-weight-bold m-0">SEO</h4>
+                </div>
+                <p>I enhance website traffic quality and volume from search engines, focusing on organic results through technical optimization and content strategy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+<!-- NEW Projects Section Start -->
+<div class="container-fluid pt-20" id="projects">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+            <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+        </div>
+        <div class="row pb-3">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Tectalik STARR</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Enterprise Performance Assessment App</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>Developed modules for checklists, tickets, and cases with real-time API sync.</li>
+                                <li>Improved app performance and maintained scalable architecture.</li>
+                            </ul>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tectalikalign.star" class="btn btn-primary mt-auto" target="_blank">View on Play Store</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">My Board Page</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Secure Enterprise Communication App</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>Built social-style feeds with media uploads, audience targeting, and profiles.</li>
+                                <li>Integrated role-based access and deployed to Play Store & App Store.</li>
+                            </ul>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tectalikalign.board&pcampaignid=web_share" class="btn btn-primary mt-auto" target="_blank">View on Play Store</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Documentary Repository</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Role-Based Cloud Storage System</h6>
+                        <p class="card-text">
+                            <ul>
+                                <li>Built a cloud-like document repository similar to AWS Storage for managing files and folders.</li>
+                                <li>Developed a role-based permission system for admin control.</li>
+                            </ul>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.tectalikalign.board&pcampaignid=web_share" class="btn btn-primary mt-auto" target="_blank">View Related App</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Gym Management System</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Responsive Website</h6>
+                        <p class="card-text">
+                            Designed using HTML, CSS, and Bootstrap with PHP mail integration for handling client communications and management tasks.
+                        </p>
+                        <a href="https://github.com/sadanand-gupta/Gym_website" class="btn btn-outline-dark mt-auto" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Online Shopping Website</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">E-commerce Web Application</h6>
+                        <p class="card-text">
+                            Built a user-friendly and responsive e-commerce site using HTML, CSS, and Bootstrap, focusing on a clean UI and intuitive user experience.
+                        </p>
+                        <a href="https://github.com/sadanand-gupta/online-shopping-website" class="btn btn-outline-dark mt-auto" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Personal Portfolio</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Vercel & GitHub Pages</h6>
+                        <p class="card-text">
+                            Built and deployed this responsive personal portfolio, hosted on Vercel and GitHub Pages for seamless performance across devices.
+                        </p>
+                        <a href="https://sadanandgupta.vercel.app/" class="btn btn-primary mt-auto" target="_blank">View Live Site</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Projects Section End -->
 
+<!-- Awards & Recognition Section Start -->
+<section>
+    <div class="container-fluid pt-20 pb-3" id="awards">
+        <div class="container">
+            <div
+                class="position-relative d-flex align-items-center justify-content-center">
+                <h1
+                    class="display-2 text-uppercase text-white headings"
+                    style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
+                <h1
+                    class="position-absolute text-uppercase text-primary">Awards
+                    & Recognition</h1>
             </div>
-        </div>
-    </section>
-
-
-                    <!-- Qualification Start -->
-                    <div class="container-fluid py-20" id="Expericence">
-                        <div class="container">
-                            <div
-                                class="position-relative d-flex align-items-center justify-content-center">
-                                <h1
-                                    class="display-2 text-uppercase text-white headings"
-                                    style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                                <h1
-                                    class="position-absolute text-uppercase text-primary">Education
-                                    & Expericence</h1>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <h3 class="mb-4">My Education</h3>
-                                    <div
-                                        class="border-left border-primary pt-2 pl-4 ml-2">
-                                        <div
-                                            class="position-relative ex-me mb-4">
-                                            <i
-                                                class="far fa-dot-circle text-primary position-absolute"
-                                                style="top: 2px; left: -35px; font-size: 22px;"></i>
-                                            <h5
-                                                class="font-weight-bold mb-1">Bachelor
-                                                of Computer Science</h5>
-                                            <p class="mb-2"><strong>Dhanalakshmi
-                                                    College Of
-                                                    Engineering</strong></p>
-                                            <p>Computer Science and Engineering
-                                                <p>CGPA – 8.4 | 2020 - 2024</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h3 class="mb-4">My Expericence</h3>
-                                        <div
-                                            class="border-left border-primary pt-2 pl-4 ml-2">
-                                            <div
-                                                class="position-relative ex-me mb-4">
-                                                <i
-                                                    class="far fa-dot-circle text-primary position-absolute"
-                                                    style="top: 0px;left: -35px;  font-size: 22px;"></i>
-                                                <h5
-                                                    class="font-weight-bold mb-1">Tectalik
-                                                    - From Human to AI</h5>
-                                                <p style="font-size: 16px; line-height: 1.6; text-align: justify; margin-bottom: 20px; color: #333; font-family: Arial, sans-serif; max-width: 100%;">I am currently working as an
-                                                    Align Associate at Tectalik,
-                                                    where I specialize as a
-                                                    Flutter App Developer. My
-                                                    expertise lies in developing
-                                                    cross-platform mobile
-                                                    applications using Flutter
-                                                    and Dart, enabling efficient
-                                                    and high-performance app
-                                                    development. Throughout my
-                                                    journey, I have utilized
-                                                    various tools and
-                                                    programming languages,
-                                                    always staying updated with
-                                                    the latest technologies and
-                                                    frameworks. My technical
-                                                    skills allow me to create
-                                                    user-friendly, scalable, and
-                                                    efficient applications while
-                                                    adhering to clean code
-                                                    practices. I am passionate
-                                                    about problem-solving and
-                                                    always strive to deliver
-                                                    innovative solutions in
-                                                    every project I work on.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div
-                                            class="border-left border-primary pt-2 pl-4 ml-2">
-                                            <div
-                                                class="position-relative ex-me mb-4">
-                                                <i
-                                                    class="far fa-dot-circle text-primary position-absolute"
-                                                    style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                                                <h5
-                                                    class="font-weight-bold mb-1">ENDEAVOURS
-                                                    TECHNOLOGY SERVICES</h5>
-                                                <p
-                                                    class="mb-2"><strong>karwingz.com
-                                                        | <a
-                                                            href="https://karwingz.com/">Visit
-                                                            karwingz.com</a>
-                                                    </strong> | <larger>Tours
-                                                        and travels in
-                                                        India</larger></p>
-                                                <p style="font-size: 16px; line-height: 1.6; text-align: justify; margin-bottom: 20px; color: #333; font-family: Arial, sans-serif; max-width: 100%;">I had the opportunity to
-                                                    collaborate as part of a
-                                                    dedicated team to develop
-                                                    the 'karwingz' website, a
-                                                    platform designed to
-                                                    showcase the beauty and
-                                                    diversity of India to
-                                                    international travelers.
-                                                    Leveraging the power of
-                                                    WordPress, we crafted a
-                                                    dynamic and user-friendly
-                                                    website that not only
-                                                    captures the essence of
-                                                    India's rich culture,
-                                                    landscapes, and experiences
-                                                    but also makes it easily
-                                                    accessible to travelers from
-                                                    around the world. It was a
-                                                    fulfilling project that
-                                                    allowed us to combine our
-                                                    technical skills with our
-                                                    passion for promoting India
-                                                    as an incredible travel
-                                                    destination @ENDEAVOURS
-                                                    TECHNOLOGY SERVICES.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Qualification End -->
-
-                        <!-- Services Start -->
-                        <div class="container-fluid pt-20" id="service">
-                            <div class="container">
-                                <div
-                                    class="service-h4 position-relative d-flex align-items-center justify-content-center">
-                                    <h1
-                                        class="display-2 text-uppercase text-white headings"
-                                        style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                                    <h1
-                                        class="position-absolute text-uppercase text-primary">My
-                                        Works</h1>
-                                </div>
-                                <div class="row pb-3">
-                                    <div
-                                        class="service-box col-lg-4 col-md-6 text-center mb-5">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center mb-4">
-                                            <i
-                                                class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                                            <h4 class="font-weight-bold m-0">Web
-                                                Design</h4>
-                                        </div>
-                                        <p>I have a strong web design
-                                            background, and I've created many
-                                            WordPress websites,
-                                            excelling in <br> design, UX, SEO,
-                                            and client communication with better
-                                            understanding of Design.
-                                        </p>
-                                        <a
-                                            class="border-bottom border-primary text-decoration-none"
-                                            href="#">Read More</a>
-                                            <!-- href="readmore.html">Read More</a> -->
-
-                                    </div>
-                                    <!-- <div class="service-box col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Development</h4>
+            <div class="row portfolio-container">
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/Award2.webp"
+                            alt="Award 1">
+                        
                     </div>
-                    <p>Web development involves designing, building, and maintaining websites, encompassing web design, content publishing, and the creation of internet-based applications.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div> -->
-                                    <div
-                                        class="service-box col-lg-4 col-md-6 text-center mb-5">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center mb-4">
-                                            <i
-                                                class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                                            <h4
-                                                class="font-weight-bold m-0">Apps
-                                                Development</h4>
-                                        </div>
-                                        <p>App development is the process of
-                                            designing, creating, and maintaining
-                                            web and mobile applications. It
-                                            includes UI/UX design, navigation,
-                                            interactivity, and backend
-                                            development to ensure seamless
-                                            functionality and user
-                                            experience.</p>
-                                        <a
-                                            class="border-bottom border-primary text-decoration-none"
-                                            href>Read More</a>
-                                    </div>
-                                    <div
-                                        class="service-box col-lg-3 col-md-6 text-center mb-5">
-                                        <div
-                                            class="d-flex align-items-center justify-content-center mb-4">
-                                            <i
-                                                class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                                            <h4
-                                                class="font-weight-bold m-0">SEO</h4>
-                                        </div>
-                                        <p>SEO is the enhancement of website
-                                            traffic quality <br>and volume from
-                                            search engines,
-                                            focusing on organic traffic rather
-                                            than direct or paid traffic. </p>
-                                        <a
-                                            class="border-bottom border-primary text-decoration-none"
-                                            href>Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Services End -->
-
-                        <!-- Awards & Recognition Section Start -->
-                        <section>
-                            <div class="container-fluid pt-20 pb-3" id="awards">
-                                <div class="container">
-                                    <div
-                                        class="position-relative d-flex align-items-center justify-content-center">
-                                        <h1
-                                            class="display-2 text-uppercase text-white headings"
-                                            style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
-                                        <h1
-                                            class="position-absolute text-uppercase text-primary">Awards
-                                            & Recognition</h1>
-                                    </div>
-                                    <div class="row portfolio-container">
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/Award2.webp"
-                                                    alt="Award 1">
-                                                
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="200">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/award5.webp"
-                                                    alt="Award 2">
-                                                
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="400">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/Award3.webp"
-                                                    alt="Award 3">
-                                                
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="600">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/Award4.webp"
-                                                    alt="Award 4">
-                                                
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="1000">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/Sadanand Gupta T_.png"
-                                                    alt="Award 6">
-                                                
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="col-lg-4 col-md-6 mb-4 portfolio-item"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="800">
-                                            <div
-                                                class="position-relative overflow-hidden mb-2 shadow-lg rounded">
-                                                <img
-                                                    class="img-fluid rounded w-100"
-                                                    src="img/Award1.webp"
-                                                    alt="Award 5">
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                       <!-- Contact Section -->
-<div class="container py-5" id="contact" style="background-color: #f0f5ff;">
-    <div class="row">
-        <div class="col-md-6 d-flex align-items-center">
-            <div class="contact-info">
-                <h2 data-aos="fade-up" class="text-primary">Drop a Mail</h2>
-                <p class="mb-4 text-dark">Feel free to reach out if you have any questions or would like to work together.</p>
-                <div class="contact-details">
-                    <p class="text-primary"><i class="bi bi-envelope text-primary"></i> sadanandguptat@gmail.com</p>
                 </div>
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/award5.webp"
+                            alt="Award 2">
+                        
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/Award3.webp"
+                            alt="Award 3">
+                        
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/Award4.webp"
+                            alt="Award 4">
+                        
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="1000">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/Sadanand Gupta T_.png"
+                            alt="Award 6">
+                        
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-md-6 mb-4 portfolio-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="800">
+                    <div
+                        class="position-relative overflow-hidden mb-2 shadow-lg rounded">
+                        <img
+                            class="img-fluid rounded w-100"
+                            src="img/Award1.webp"
+                            alt="Award 5">
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <div class="col-md-6">
-            <form action="mailto:sadanandguptat@gmail.com" method="post" class="p-4 shadow-sm rounded" data-aos="fade-up" style="background-color: white; border: 1px solid #d0e0ff;">
-                <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name" required style="border-color: #3178c6;">
-                </div>
-                <div class="form-group mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email" required style="border-color: #3178c6;">
-                </div>
-                <div class="form-group mb-3">
-                    <textarea class="form-control" placeholder="Message" rows="5" required style="border-color: #3178c6;"></textarea>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <button type="submit" class="btn btn-primary fixed-btn">
-                      Send Message
-                    </button>
-                  
-                    <a id="downloadBtn"
-                       href="https://drive.google.com/uc?export=download&id=1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN" 
-                       class="btn fixed-btn"
-                       style="background-color: black; border-color: transparent; color: coral;" 
-                       download 
-                       title="Click to download"
-                       onclick="showProcessingText()">
-                       <i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me
-                    </a>
-                  </div>
-                  
-                  <style>
-                    .fixed-btn {
-                      height: 45px; /* Adjust as needed */
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      min-width: 130px; /* Optional: prevent shrinking */
-                      white-space: nowrap;
-                    }
-                  </style>
-                  
-                  <script>
-    function showProcessingText() {
-        const btn = document.getElementById('downloadBtn');
-        
-        // 1. Change the button to show the "Downloading..." message
-        btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right: 6px;"></i> Downloading...';
-        
-        // 2. Set a timer to change it back after 4 seconds (4000ms)
-        setTimeout(function() {
-            btn.innerHTML = '<i class="bi bi-download" style="margin-right: 6px;"></i> Hire Me';
-        }, 4000); 
-    }
-</script>
-                  
-
-
-
-
-                </div>
-            </form>
-        </div>
-        
     </div>
+</section>
+<!-- Awards Section End -->
+
+<!-- NEW Certifications Section Start -->
+<div class="container-fluid pt-20 bg-light" id="certifications">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Certifications</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Certifications</h1>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <ul>
+                    <li><h5 class="font-weight-bold">Gen AI Exchange Bootcamp</h5><p>Google Cloud & Hack2skill (June 2025)</p></li>
+                    <li><h5 class="font-weight-bold">AWS Academy Graduate - Cloud Foundations</h5><p>AWS Academy</p></li>
+                    <li><h5 class="font-weight-bold">Google Advanced Data Analytics Certificate</h5><p>Coursera</p></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li><h5 class="font-weight-bold">Python for Data Science</h5><p>IBM</p></li>
+                    <li><h5 class="font-weight-bold">UI/UX Designing</h5><p>Lernx</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Certifications Section End -->
+
+<!-- NEW Extra-Curricular Section Start -->
+<div class="container-fluid pt-20" id="extracurricular">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-2 text-uppercase text-white headings" style="-webkit-text-stroke: 1px #dee2e6;">Leadership</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Extra-Curricular Activities</h1>
+        </div>
+        <div class="row py-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 text-center mb-4">
+                <h5 class="font-weight-bold">Employment Cell Head</h5>
+                <p class="text-muted">Rotary Club (2023-2024)</p>
+                <p>Managed job placement, career guidance, and skill development initiatives.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-4">
+                <h5 class="font-weight-bold">International Service Director</h5>
+                <p class="text-muted">Rotary Club (2022-2023)</p>
+                <p>Led humanitarian projects in health, education, and disaster relief.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-4">
+                <h5 class="font-weight-bold">Associate Professional Service Director</h5>
+                <p class="text-muted">Rotaract Club (2021-2022)</p>
+                <p>Trained members in public speaking, project planning, and financial management.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Extra-Curricular Section End -->
+
+
+<!-- Contact Section -->
+<div class="container py-5" id="contact" style="background-color: #f0f5ff;">
+<div class="row">
+<div class="col-md-6 d-flex align-items-center">
+    <div class="contact-info">
+        <h2 data-aos="fade-up" class="text-primary">Drop a Mail</h2>
+        <p class="mb-4 text-dark">Feel free to reach out if you have any questions or would like to work together.</p>
+        <div class="contact-details">
+            <p class="text-primary"><i class="bi bi-envelope text-primary"></i> sadanandguptat@gmail.com</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <form action="mailto:sadanandguptat@gmail.com" method="post" class="p-4 shadow-sm rounded" data-aos="fade-up" style="background-color: white; border: 1px solid #d0e0ff;">
+        <div class="form-group mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required style="border-color: #3178c6;">
+        </div>
+        <div class="form-group mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required style="border-color: #3178c6;">
+        </div>
+        <div class="form-group mb-3">
+            <textarea class="form-control" placeholder="Message" rows="5" required style="border-color: #3178c6;"></textarea>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+            <button type="submit" class="btn btn-primary fixed-btn">
+              Send Message
+            </button>
+          
+            <a id="downloadBtn"
+               href="https://drive.google.com/uc?export=download&id=1juvpE-RbHnwHYH0UbbCbDUBjpsTFLqcN" 
+               class="btn fixed-btn"
+               style="background-color: black; border-color: transparent; color: coral;" 
+               download 
+               title="Click to download"
+               onclick="showProcessingText()">
+               <i class="bi bi-download" style="margin-right: 6px;"></i> Download CV
+            </a>
+          </div>
+          
+          <style>
+            .fixed-btn {
+              height: 45px; /* Adjust as needed */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-width: 130px; /* Optional: prevent shrinking */
+              white-space: nowrap;
+            }
+          </style>
+          
+          <script>
+function showProcessingText() {
+const btn = document.getElementById('downloadBtn');
+
+// 1. Change the button to show the "Downloading..." message
+btn.innerHTML = '<i class="bi bi-hourglass-split" style="margin-right: 6px;"></i> Downloading...';
+
+// 2. Set a timer to change it back after 4 seconds (4000ms)
+setTimeout(function() {
+    btn.innerHTML = '<i class="bi bi-download" style="margin-right: 6px;"></i> Download CV';
+}, 4000); 
+}
+</script>
+        </div>
+    </form>
+</div>
+
+</div>
 </div>
 <!-- Contact End -->
                             
