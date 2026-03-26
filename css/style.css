@@ -1,292 +1,113 @@
-
+/* ===== Reset & Base ===== */
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
- 
 
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #6c757d;
-  text-align: left;
-  background-color: #ffffff;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f9fa;
 }
- 
+
 a {
-  color: #0BCEAF;
-  text-decoration: none;
-  background-color: transparent;
+    color: #457efa;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #078571;
-  text-decoration: underline;
-}
- 
-h1,h2,h3,h4,h5,h6,p{
-  color: #020202 !important;
-} 
-
- 
-
-/********** Template CSS ************/
-
-
-.text-stroke-header {
-  -webkit-text-stroke: 3px #ffffff;
-  color: transparent;
+    color: #3568d4;
+    text-decoration: none;
 }
 
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: #1e3c72 !important;
+}
+
+p {
+    color: #555 !important;
+}
+
+/* ===== Buttons ===== */
 .btn {
-  padding: 10px 25px;
-  border-radius: 100px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #457efa;
+    border-color: #457efa;
+}
+
+.btn-primary:hover {
+    background-color: #3568d4;
+    border-color: #3568d4;
 }
 
 .btn-social {
-  width: 45px;
-  height: 45px;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  border-radius: 45px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
+/* ===== Forms ===== */
 .form-control {
-  border-radius: 25px;
+    border-radius: 8px;
 }
 
-
-
-
-/* ================ Navigation Menu ====================*/
-
-
-.navbar-light {
-  display: none;
+.form-control:focus {
+    border-color: #457efa;
+    box-shadow: 0 0 0 3px rgba(69, 126, 250, 0.15);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  padding: 25px 10px;
-  color: #343a40;
-  font-weight: 500;
-  outline: none;
+/* ===== Selection Color ===== */
+::selection {
+    background: #457efa;
+    color: #fff;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: #0BCEAF;
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-@media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link {
-    padding: 10px 0;
-  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
-
-/*===================== Hero section ======================*/
-
-.about-img{
- margin-left: -100px;
- right: -60px;
+::-webkit-scrollbar-thumb {
+    background: #457efa;
+    border-radius: 4px;
 }
 
-.display-1{
-  font-size: 160px;
-  font-weight: 1000;
-  
-}
- 
-.position-absolute{
-  font-weight: 700;
-  
+::-webkit-scrollbar-thumb:hover {
+    background: #3568d4;
 }
 
-.typed-cursor {
-  font-size: 45px;
-  color: #ffffff;
-}
-
-.blue{
-  background-color: #1c5ce6;
-  color: #ffffff;
-}
-.btn{
-  border: 2px solid rgb(29, 105, 247);
-} 
-.btn-white{
-  background-color: #ffffff;
-  border:2px solid #ffffff;
-}
-.btn-blue{
-  border: 2.4px solid #ffffff;
-  color: #ffffff;
-}
-@media (max-width: 700px) {
-  .about-img{
-    margin-left: 20px;
-    right: 0px;
-    top: 30px;
-   }
-}
-/*===================== Progress Bar ====================*/
-
-.progress {
-  border-radius: 10px;
-}
-
-.progress .progress-bar {
-  width: 0px;
-  border-radius: 10px;
-  transition: 2s;
-}
-
-
-/* =================== Queality ======================*/
-.ex-me{
-  margin-top: 35px;
-}
-
-
-/* =================== Service Section ==================*/
-.service-h4{
-  padding-bottom: 30px;
-}
-
-.service-icon {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-}
-
-.service-box{
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
-  margin-left: 20px;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.service-box:hover{
-  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
- 
-}
-/* =================== Portfolio section ==================*/
-
-
-.portfolio-item .portfolio-btn {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  opacity: 0;
-  transition: .5s;
-}
-
-.portfolio-item:hover .portfolio-btn {
-  opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
-  top: 30px;
-  left: 30px;
-}
-
-/* ====================== Testimonial ================*/
-.testimonial-carousel .text-center{
-  background-color: #eaecf0d0;
-  border-radius: 20px;
-  margin: 20px;
-
-}
-.testimonial-carousel .text-center h4{
-
-}
-
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background: #dddddd;
-}
-
-.testimonial-carousel .owl-dot.active {
-  background: #0BCEAF;
-}
-
-
-
-/* ========================== Contact Us ========================*/
-
-.contact-form .help-block ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-
-/*====================== Back to buttom ==================*/
-
-.scroll-to-bottom {
-  position: fixed;
-  width: 20px;
-  left: calc(50% - 10px);
-  bottom: 30px;
-  z-index: 11;
-  animation: action 1s infinite alternate;
-}
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  width: 30px;
-  text-align: center;
-  right: 30px;
-  bottom: 30px;
-  z-index: 11;
-  animation: action 1s infinite alternate;
-}
-
-@keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
-}
-.centered-form {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+/* ===== White Text Helper ===== */
 .white-text {
     color: white !important;
 }
