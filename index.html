@@ -591,6 +591,71 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
+        /* ===== Web App Screenshot Showcase ===== */
+        .webapp-showcase {
+            position: relative;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .webapp-frame {
+            width: 100%;
+            height: 100%;
+            background: #1a1a2e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+        }
+        .webapp-toolbar {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #16213e;
+            gap: 6px;
+        }
+        .webapp-toolbar .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .webapp-toolbar .dot.red { background: #ff5f57; }
+        .webapp-toolbar .dot.yellow { background: #febc2e; }
+        .webapp-toolbar .dot.green { background: #28c840; }
+        .webapp-toolbar .url-bar {
+            flex: 1;
+            background: rgba(255,255,255,0.08);
+            border-radius: 4px;
+            padding: 3px 10px;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.65rem;
+            margin-left: 8px;
+        }
+        .webapp-screen {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .webapp-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+        .webapp-screen img.active {
+            opacity: 1;
+        }
+
         /* ===== Awards ===== */
         .award-img {
             border-radius: 12px;
@@ -1059,19 +1124,21 @@
                             <div class="phone-group">
                                 <div class="phone-mockup">
                                     <div class="phone-screen">
-                                        <img src="https://play-lh.googleusercontent.com/MW-6TEocQL6Az30sq2WfDZR8mUBbIngLwptpMZOp4Q6pYYdu6sj1c5zoQUhmz5GpMvE=w1052-h592" alt="STARR Board" class="active">
+                                        <img src="https://play-lh.googleusercontent.com/1m9rh3w_i2oKDCqgLhf-HWmjIu7nkXDz4wjLcFUg9auAjoqt9UIgfLJDZHuGGtZIpbDgZdqM-uHA8ze8rokI=w1052-h592" alt="STARR Board" class="active">
                                     </div>
                                 </div>
                                 <div class="phone-mockup">
                                     <div class="phone-screen" data-carousel>
-                                        <img src="https://play-lh.googleusercontent.com/kSd-6HriL3_WxooZEyyWdaR7ksoh29Ex1qpDnvbl5YQhyRAJNFxH8rPMurLLDzlQ8Y8=w1052-h592" alt="STARR Board" class="active">
-                                        <img src="https://play-lh.googleusercontent.com/6TL_XplvQk255lEcxcsg7x1CzuCWVcfi0MA3eTDFXDVySkVhSvq6tGjekzyLLCQmEBs=w1052-h592" alt="STARR Board">
-                                        <img src="https://play-lh.googleusercontent.com/vhpFGXN6DiBzi7imDkAUC6c02WtJzlXBrghum47Hw6KtM3Ig_M2-fmuHbQS_IeYigw=w1052-h592" alt="STARR Board">
+                                        <img src="https://play-lh.googleusercontent.com/7xpCRPw2eu3vBBsWU6RDGhuyAGjjWNnU-Yv1ehVsZa2SIPeIuuw_Vsq93xAKA7ix4d6Ye92KN593pv8EZl-eFg=w1052-h592" alt="STARR Board" class="active">
+                                        <img src="https://play-lh.googleusercontent.com/TfAaoBQ4-mf1xM1gkjN_sgq_WzWOQvoQ2TejW_5M09dmamBCRQw7kmezCKa62XAP6BOAr74ckvBIHSj3TfdX71o=w1052-h592" alt="STARR Board">
+                                        <img src="https://play-lh.googleusercontent.com/ePtX-1B2P2va7vL0wDau_-lWsmnRN0DFg4RYioZUuf5YIhIah3u4FUSKfZ1Yl9IW69ezciWx6PiqdGj2Cg8V=w1052-h592" alt="STARR Board">
+                                        <img src="https://play-lh.googleusercontent.com/nz2_w_uFwHrHnjQtQ31aWCDl6Rwr3r32L9F_1CDB02K0lQSkwBynscpqrJer-7g354zyvZns1ASgqQaHQ1k6Yw=w1052-h592" alt="STARR Board">
+                                        <img src="https://play-lh.googleusercontent.com/vsywf0bObciy140rkhk3u7JB_2aurt86MF-9HqfkynP6VG7Lpl4IvZUgspRh3iBap3D71ewoFZFYVPdE1XGR2Q=w1052-h592" alt="STARR Board">
                                     </div>
                                 </div>
                                 <div class="phone-mockup">
                                     <div class="phone-screen">
-                                        <img src="https://play-lh.googleusercontent.com/IXlOQlFouGRk0BvCPJ6FExSFfFbBzPeD34E1nw0IGGDWthvIQtJkgeBc6dWZwHId5dCR=w1052-h592" alt="STARR Board" class="active">
+                                        <img src="https://play-lh.googleusercontent.com/ywuO822cVqmCqzTNzQBFAEL24RJxG9kq9WZjd4i4aKHgR5OQqvIwHumBRZsn47V0CriJjO3PKz-_vyCDeKhSIg=w1052-h592" alt="STARR Board" class="active">
                                     </div>
                                 </div>
                             </div>
@@ -1119,6 +1186,9 @@
                                         <img src="https://play-lh.googleusercontent.com/5idGcxoRj1_ncjQPbZmtmXFHAnv3rj64tRvo76sZLSo_OlSpoT2zQYHBPxpIoRPj2laCvfLWyky3unYlbulHJ0Q=w1052-h592" alt="Caratcanvas" class="active">
                                         <img src="https://play-lh.googleusercontent.com/0u5Rgx1vGrrl2Suulg0SR0egw0cjpUXg3QHPu6ToGic9FCTYXmR7Frfc1JkRKiB6wruXSnpmnp7rbD0VqrdWhOo=w1052-h592" alt="Caratcanvas">
                                         <img src="https://play-lh.googleusercontent.com/3iI1JmcM1Qb_Rg2p13UXOmJzfQncLhGDvAIRCsUh0R7hnh1mRSHk5IJyDRPkW7j6br3AR6oBlPNP0zcBp-EjXA=w1052-h592" alt="Caratcanvas">
+                                        <img src="https://play-lh.googleusercontent.com/19zHh1ncuKgGyPBcc_xHVeKFBA9zzIf0F_VpTIAhC2QpzlTpHLL98oGnlZY4AIk2wPmSz-sss8CGb6qZFMcI=w1052-h592" alt="Caratcanvas">
+                                        <img src="https://play-lh.googleusercontent.com/AATwD8lL0t1DfJIk1ttEjxNhRDxwgryqhsb56ylnEnfQT8yBWcuGPCQhHHx6tOE-e-VN3BYtFd2SLGdNPqhv=w1052-h592" alt="Caratcanvas">
+                                        <img src="https://play-lh.googleusercontent.com/HvjX_K_jHWIYFBQupcxH_N5qE6ISZQXss4VnUIWPSiZxRazefi-FLMW1l9gYuqPF6sX4wk0m6P9uKXhQZ9lc2w=w1052-h592" alt="Caratcanvas">
                                     </div>
                                 </div>
                                 <div class="phone-mockup">
@@ -1168,6 +1238,8 @@
                                         <img src="https://play-lh.googleusercontent.com/sq_DUQLKUoFpZswsYTvXhKPGz9ejCLoKgY-6bzTT8zqGdFk6V7VQJmLVFTm_iVhk5vA8Iiut0k_Uf3Yu6ArK3Ag=w1052-h592" alt="Fabinos" class="active">
                                         <img src="https://play-lh.googleusercontent.com/vwyQdmEXg9tfUD6KmoWFZjaG_VyKe6S2vythB02LaeDbJfFjbom_B3ZgUesqCmajZHc0g_mhMUVhJDR88IS3=w1052-h592" alt="Fabinos">
                                         <img src="https://play-lh.googleusercontent.com/-vr-TGKFw255E4zSh2O3q4qVcuI74slsW_xcclxJnHb-OhfIP25QtRzf3PnVMLEWe2TxRn-9W9n5PCtqoiT2kA=w1052-h592" alt="Fabinos">
+                                        <img src="https://play-lh.googleusercontent.com/m4cmaPIUyMaEEKHt4VUvfd2VGjOajmJbsFVMWjyv0y3x4wC8hwiy8tSus4gQzyWB7K4bPlffGE3UBtLLPDngdg=w1052-h592" alt="Fabinos">
+                                        <img src="https://play-lh.googleusercontent.com/oSYUyNRJhcf6rePfm1LD5UX84HATFi97vBOaaU6jkglkJqTtt36Qz0lvugSdffdbpdixEPYupvQRPCXHBVTX=w1052-h592" alt="Fabinos">
                                     </div>
                                 </div>
                                 <div class="phone-mockup">
@@ -1217,6 +1289,7 @@
                                     <div class="phone-screen" data-carousel>
                                         <img src="https://play-lh.googleusercontent.com/7pFiUPs_FBw4njMpIx4A2qYvV_Ia46DRFQ0qp4bB7OxlkyYAMUSm4Qp5GqASrEEBmolsipLJ5ObeojTaF4eog_Y=w1052-h592" alt="ORO Jewellery" class="active">
                                         <img src="https://play-lh.googleusercontent.com/tLsvO3BmVGjfFs2zQGovZTVkXiwO4Af7WMtAMlqYGsT6TU2-CKDpk6-Kk5MLNO7AJ3LSLlaxUDkc5YUD5GW59Q=w1052-h592" alt="ORO Jewellery">
+                                        <img src="https://play-lh.googleusercontent.com/11rnDhKmcrKzkkw4el6dDTx00O6Dkl5booJ17IbqC2M6FHzvUx0YuKrh5yjjDvgKxI5uxMzVUhyPI1YJb9pCwA=w1052-h592" alt="ORO Jewellery">
                                     </div>
                                 </div>
                                 <div class="phone-mockup">
@@ -1254,29 +1327,47 @@
                     </div>
                 </div>
 
-                <!-- Project: Documentary Repository -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project: DMS - Document Repository -->
+                <div class="col-lg-8 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card project-card">
-                        <div class="project-screenshot-wrapper" style="background: linear-gradient(135deg, #0f2027, #2c5364);">
-                            <div class="text-center text-white p-3">
-                                <i class="bi bi-folder2-open" style="font-size: 3rem; opacity: 0.7;"></i>
-                                <h5 class="white-text mt-2 mb-0">Documentary Repository</h5>
-                                <small class="white-text" style="opacity: 0.8;">Cloud Storage System</small>
+                        <div class="webapp-showcase" style="background: linear-gradient(135deg, #0f2027, #2c5364);">
+                            <div class="webapp-frame">
+                                <div class="webapp-toolbar">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="url-bar">dms.starr.app/repository</span>
+                                </div>
+                                <div class="webapp-screen" data-carousel>
+                                    <img src="img/DMS.PNG" alt="DMS - Repository Root with folder tree and actions" class="active">
+                                    <img src="img/DMS2.PNG" alt="DMS - Subfolder navigation with breadcrumbs">
+                                    <img src="img/DMS3.PNG" alt="DMS - File actions: Download, Move, Rename, Trash">
+                                    <img src="img/DMS4.PNG" alt="DMS - Trash with auto-delete after 30 days">
+                                    <img src="img/DMS5.PNG" alt="DMS - File browsing with breadcrumb path">
+                                    <img src="img/DMS6.PNG" alt="DMS - Bulk file selection and move actions">
+                                    <img src="img/DMS7.PNG" alt="DMS - Trash: Delete Permanently and Restore">
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Documentary Repository</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Role-Based Cloud Storage System</h6>
+                            <h5 class="card-title">DMS - Document Repository</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">AWS Cloud-Backed Enterprise Document Management System</h6>
                             <div class="card-text">
                                 <ul>
-                                    <li>Cloud-like document repository for managing files and folders</li>
-                                    <li>Role-based permission system for admin control</li>
+                                    <li>Built a cloud-like file management system connected directly to AWS, enabling upload, download, move, rename, and organize files & folders seamlessly without OTP or repeated login</li>
+                                    <li>Full file lifecycle: create folders, upload PDFs/images/documents, rename, move between directories, move to trash, restore deleted items, or permanently delete</li>
+                                    <li>Trash system with 30-day auto-delete, bulk selection for mass restore or permanent deletion</li>
+                                    <li>Privacy secured via role-based access control: a dedicated Role Management screen with granular checkbox permissions controls exactly which actions each user can perform</li>
+                                    <li>Custom-built backend API for data handling, synced directly with AWS Cloud - every action (upload, delete, move, rename) reflects in real-time on both the app and cloud storage</li>
                                 </ul>
                             </div>
                             <div class="project-tech">
-                                <span class="badge">Flutter</span>
+                                <span class="badge">Flutter Web</span>
                                 <span class="badge">Dart</span>
+                                <span class="badge">AWS S3</span>
+                                <span class="badge">Custom API</span>
                                 <span class="badge">REST API</span>
+                                <span class="badge">Role-Based Access</span>
                             </div>
                         </div>
                     </div>
