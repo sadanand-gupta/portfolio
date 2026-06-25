@@ -594,7 +594,6 @@
         /* ===== Web App Screenshot Showcase ===== */
         .webapp-showcase {
             position: relative;
-            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -604,13 +603,10 @@
         }
         .webapp-frame {
             width: 100%;
-            height: 100%;
             background: #1a1a2e;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-            display: flex;
-            flex-direction: column;
         }
         .webapp-toolbar {
             display: flex;
@@ -637,22 +633,68 @@
             margin-left: 8px;
         }
         .webapp-screen {
-            flex: 1;
             position: relative;
             overflow: hidden;
         }
         .webapp-screen img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top left;
-            position: absolute;
-            top: 0;
-            left: 0;
+            display: block;
             opacity: 0;
             transition: opacity 0.6s ease;
         }
+        .webapp-screen img:not(.active) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
         .webapp-screen img.active {
+            position: relative;
+        }
+        .webapp-screen img.active {
+            opacity: 1;
+        }
+        .webapp-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+            opacity: 0;
+        }
+        .webapp-screen:hover .webapp-nav {
+            opacity: 1;
+        }
+        .webapp-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .webapp-nav.prev { left: 10px; }
+        .webapp-nav.next { right: 10px; }
+        .webapp-counter {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            z-index: 5;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .webapp-screen:hover .webapp-counter {
             opacity: 1;
         }
 
@@ -1338,7 +1380,7 @@
                                     <span class="dot green"></span>
                                     <span class="url-bar">dms.starr.app/repository</span>
                                 </div>
-                                <div class="webapp-screen" data-carousel>
+                                <div class="webapp-screen" data-carousel data-webapp-nav>
                                     <img src="img/DMS.PNG" alt="DMS - Repository Root with folder tree and actions" class="active">
                                     <img src="img/DMS2.PNG" alt="DMS - Subfolder navigation with breadcrumbs">
                                     <img src="img/DMS3.PNG" alt="DMS - File actions: Download, Move, Rename, Trash">
@@ -1346,6 +1388,9 @@
                                     <img src="img/DMS5.PNG" alt="DMS - File browsing with breadcrumb path">
                                     <img src="img/DMS6.PNG" alt="DMS - Bulk file selection and move actions">
                                     <img src="img/DMS7.PNG" alt="DMS - Trash: Delete Permanently and Restore">
+                                    <button class="webapp-nav prev" onclick="navWebapp(this, -1)">&#10094;</button>
+                                    <button class="webapp-nav next" onclick="navWebapp(this, 1)">&#10095;</button>
+                                    <span class="webapp-counter">1 / 7</span>
                                 </div>
                             </div>
                         </div>
@@ -1653,12 +1698,36 @@
             var imgs = screen.querySelectorAll('img');
             if (imgs.length <= 1) return;
             var idx = 0;
-            setInterval(function() {
+            var hasNav = screen.hasAttribute('data-webapp-nav');
+            var counter = screen.querySelector('.webapp-counter');
+            var paused = false;
+            var timer = setInterval(function() {
+                if (paused) return;
                 imgs[idx].classList.remove('active');
                 idx = (idx + 1) % imgs.length;
                 imgs[idx].classList.add('active');
+                if (counter) counter.textContent = (idx + 1) + ' / ' + imgs.length;
             }, 3000);
+            if (hasNav) {
+                screen._carouselData = { imgs: imgs, idx: idx, counter: counter, timer: timer, setPaused: function(v) { paused = v; }, setIdx: function(v) { idx = v; } };
+            }
         });
+
+        // Manual navigation for webapp screenshots
+        function navWebapp(btn, dir) {
+            var screen = btn.parentElement;
+            var data = screen._carouselData;
+            if (!data) return;
+            data.imgs[data.idx].classList.remove('active');
+            data.idx = (data.idx + dir + data.imgs.length) % data.imgs.length;
+            data.setIdx(data.idx);
+            data.imgs[data.idx].classList.add('active');
+            if (data.counter) data.counter.textContent = (data.idx + 1) + ' / ' + data.imgs.length;
+            // Pause auto-rotate for 8 seconds after manual click
+            data.setPaused(true);
+            clearTimeout(screen._resumeTimer);
+            screen._resumeTimer = setTimeout(function() { data.setPaused(false); }, 8000);
+        }
 
         // Send WhatsApp message
         function sendWhatsApp() {
